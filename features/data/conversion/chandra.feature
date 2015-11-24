@@ -1,8 +1,8 @@
 # Created by laszl at 24.11.2015
-Feature: Chandra conversion
+Feature: Chandra
   Convert data from chandra database
   into two columns: time and magnitudo
 
-  Scenario: correct chandra conversion
+  Scenario: correct data
 
-  Scenario: incorrect chandra conversion
+  Scenario: incorrect data

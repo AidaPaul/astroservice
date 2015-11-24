@@ -1,8 +1,8 @@
 # Created by laszl at 24.11.2015
-Feature: Catalina conversion
+Feature: Catalina
   Convert data from catalina database
   into two columns: time and magnitudo
 
-  Scenario: correct catalina conversion
+  Scenario: correct data
 
-  Scenario: incorrect catalina conversion
+  Scenario: incorrect data

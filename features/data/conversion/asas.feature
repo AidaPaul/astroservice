@@ -1,8 +1,8 @@
 # Created by laszl at 24.11.2015
-Feature: Asas conversion
+Feature: Asas
   converting from asas database
   into two columns: time and magnitudo
 
-  Scenario: correct asas conversion
+  Scenario: correct data
 
-  Scenario: incorrect asas conversion
+  Scenario: incorrect data

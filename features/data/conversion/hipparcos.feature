@@ -1,8 +1,8 @@
 # Created by laszl at 24.11.2015
-Feature: Hipparcos conversion
+Feature: Hipparcos
   Convert data from hipparcos database
   into two columns: time and magnitudo
 
-  Scenario: correct hipparcos conversion
+  Scenario: correct data
 
-  Scenario: incorrect hipparcos conversion
+  Scenario: incorrect data
