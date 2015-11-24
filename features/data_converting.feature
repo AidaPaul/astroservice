@@ -35,4 +35,3 @@ Feature: Data conversion
   Scenario: incorrect chandra conversion
 
   Scenario: unknown format
-
