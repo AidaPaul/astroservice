@@ -18,4 +18,21 @@ Feature: Data conversion
 
   Scenario: chandra conversion
 
+  Scenario: incorrect asas conversion
+
+  Scenario: incorrect hipparcos conversion
+
+  Scenario: incorrect nsvs conversion
+
+  Scenario: incorrect integral conversion
+
+  Scenario: incorrect munipack conversion
+
+  Scenario: incorrect kepler conversion
+
+  Scenario: incorrect catalina conversion
+
+  Scenario: incorrect chandra conversion
+
   Scenario: unknown format
+
