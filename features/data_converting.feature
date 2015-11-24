@@ -12,10 +12,10 @@ Feature: Data conversion
 
   Scenario: munipack conversion
 
-  Scenario kepler conversion
+  Scenario: kepler conversion
 
-  Scenario catalina conversion
+  Scenario: catalina conversion
 
-  Scenario chandra conversion
+  Scenario: chandra conversion
 
-  Scenario unknown format
+  Scenario: unknown format
