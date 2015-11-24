@@ -7,3 +7,7 @@ Feature: Shifting chart point by period
   Scenario: phase format
 
   Scenario: epoch format  # so called M 0 format
+
+  Scenario: errors during phase shifting
+
+  Scenario: errors during epoch shifting
