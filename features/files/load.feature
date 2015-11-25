@@ -8,3 +8,5 @@ Feature: Load file
   Scenario: text file not loaded
 
   Scenario: fits file not loaded
+
+  Scenario: other file format
