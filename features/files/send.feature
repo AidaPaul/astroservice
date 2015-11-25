@@ -1,8 +1,8 @@
 # Created by laszl at 25.11.2015
 Feature: Send file
 
-  Scenario: file send
+  Scenario: file sent
 
-  Scenario: file not send
+  Scenario: file not sent
 
-  Scenario: file partially send
+  Scenario: file partially sent
