@@ -5,8 +5,8 @@ Feature: Load file
 
   Scenario: fits file loaded
 
-  Scenario: text file not loaded
+  Scenario: text file contains errors
 
-  Scenario: fits file not loaded
+  Scenario: fits file contains errors
 
-  Scenario: other file format
+  Scenario: input file is in unsupported format

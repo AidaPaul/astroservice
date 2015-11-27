@@ -4,5 +4,3 @@ Feature: Receive file
   Scenario: file received
 
   Scenario: file not received
-
-  Scenario: file partially received

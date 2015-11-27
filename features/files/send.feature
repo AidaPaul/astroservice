@@ -4,5 +4,3 @@ Feature: Send file
   Scenario: file sent
 
   Scenario: file not sent
-
-  Scenario: file partially sent

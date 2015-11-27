@@ -6,6 +6,6 @@ Feature: Save file
 
   Scenario: fits file saved
 
-  Scenario: text file not saved
+  Scenario: errors occurred during saving text file
 
-  Scenario: fits file not saved
+  Scenario: errors occurred during saving fits file
