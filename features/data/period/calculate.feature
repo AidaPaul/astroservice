@@ -4,3 +4,5 @@ Feature: Calculate period
   Scenario: successful period calculation
 
   Scenario: unsuccessful period calculation
+
+  Scenario: input data contains errors

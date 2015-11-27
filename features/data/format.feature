@@ -2,6 +2,6 @@
 Feature: Format data
   Formats data into readable format
 
-  Scenario: data formatted
+  Scenario: data has been formatted
 
-  Scenario: data not formatted
+  Scenario: data has not been formatted

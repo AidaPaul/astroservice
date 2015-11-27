@@ -4,10 +4,10 @@ Feature: Shifting chart point by period
   based on period
   and based on expected format
 
-  Scenario: phase format
+  Scenario: display outcome in phase format
 
-  Scenario: epoch format  # so called M 0 format
+  Scenario: display outcome in epoch format  # so called M 0 format
 
-  Scenario: errors during phase shifting
+  Scenario: outcome in phase format contains errors
 
-  Scenario: errors during epoch shifting
+  Scenario: outcome in epoch format contains errors
