@@ -7,7 +7,7 @@ Feature: Converting data
 
   Scenario Outline: data compatible with selected conversion
 
-    Examples: Asas
+    Examples: Good conversion
       | sent data | selected conversion |
       | asas      | asas                |
       | kepler    | kepler              |
@@ -19,7 +19,8 @@ Feature: Converting data
       | nsvs      | nsvs                |
 
   Scenario Outline: Data incompatible with selected conversion
-    Examples:
+
+    Examples: Bad conversion
       | sent data | selected conversion |
       | asas      | other               |
       | kepler    | other               |
