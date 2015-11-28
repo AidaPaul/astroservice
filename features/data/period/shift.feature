@@ -3,11 +3,9 @@ Feature: Shifting chart point by period
   Calculates new point position
   based on period
   and based on expected format
+  
+  Scenario: shifting in phase format has been successful
 
-  Scenario: display outcome in phase format
+  Scenario: shifting in epoch format has been successful
 
-  Scenario: display outcome in epoch format  # so called M 0 format
-
-  Scenario: outcome in phase format contains errors
-
-  Scenario: outcome in epoch format contains errors
+  Scenario: errors occurred due to incorrect data

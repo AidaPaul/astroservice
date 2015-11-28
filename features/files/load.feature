@@ -1,12 +1,10 @@
 # Created by laszl at 25.11.2015
 Feature: Load file
 
-  Scenario: text file loaded
+  Scenario: system is loading text file
 
-  Scenario: fits file loaded
+  Scenario: system is loading fits file
 
-  Scenario: text file contains errors
+  Scenario: system tried, but failed in loading text file
 
-  Scenario: fits file contains errors
-
-  Scenario: input file is in unsupported format
+  Scenario: system tried, but failed in loading fits file

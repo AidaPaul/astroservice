@@ -2,10 +2,10 @@
 Feature: Save file
   # Enter feature description here
 
-  Scenario: text file saved
+  Scenario: system saved text file
 
-  Scenario: fits file saved
+  Scenario: system saved fits file
 
-  Scenario: errors occurred during saving text file
+  Scenario: system tried, but failed in saving text file
 
-  Scenario: errors occurred during saving fits file
+  Scenario: system tried, but failed in saving fits file

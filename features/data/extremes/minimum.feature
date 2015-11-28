@@ -3,8 +3,6 @@ Feature: Calculating local minimum
   Calculates local minimum
   in passed points
 
-  Scenario: minimum has been found
+  Scenario: errors occurred due to incorrect data
 
-  Scenario: minimum has not been found
-
-  Scenario: incorrect data has been passed
+  Scenario: successful minimum calculation
