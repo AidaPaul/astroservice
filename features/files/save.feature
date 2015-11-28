@@ -1,11 +1,11 @@
 # Created by laszl at 25.11.2015
 Feature: Save file
-  # Enter feature description here
+  Saving file in remote server
 
-  Scenario: system saved text file
+  Scenario: system is saving text file
 
-  Scenario: system saved fits file
+  Scenario: system is saving fits file
 
-  Scenario: system tried, but failed in saving text file
+  Scenario: user is notified about errors during saving text file
 
-  Scenario: system tried, but failed in saving fits file
+  Scenario: user is notified about errors during saving fits file

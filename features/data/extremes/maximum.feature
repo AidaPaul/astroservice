@@ -3,6 +3,6 @@ Feature: Calculates global maximum
   Calculates global maximum
   in passed points
 
-  Scenario: errors occurred due to incorrect data
+  Scenario: user requesting maximum calculation
 
-  Scenario: successful maximum calculation
+  Scenario: user is notified about errors during calculation

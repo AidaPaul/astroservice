@@ -3,6 +3,6 @@ Feature: Asas
   converting from asas database
   into two columns: time and magnitudo
 
-  Scenario: converting asas-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect asas-style data
+  Scenario: user is notified about errors during conversion

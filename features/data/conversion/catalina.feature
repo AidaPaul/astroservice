@@ -3,6 +3,6 @@ Feature: Catalina
   Convert data from catalina database
   into two columns: time and magnitudo
 
-  Scenario: converting catalina-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect catalina-style data
+  Scenario: user is notified about errors during conversion

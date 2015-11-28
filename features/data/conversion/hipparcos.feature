@@ -3,6 +3,6 @@ Feature: Hipparcos
   Convert data from hipparcos database
   into two columns: time and magnitudo
 
-  Scenario: converting hipparcos-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect hipparcos-style data
+  Scenario: user is notified about errors during conversion

@@ -3,6 +3,6 @@ Feature: Nsvs
   Convert data from nsvs database
   into two columns: time and magnitudo
 
-  Scenario: converting nsvs-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect nsvs-style data
+  Scenario: user is notified about errors during conversion

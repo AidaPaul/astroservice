@@ -2,6 +2,6 @@
 Feature: Format data
   Formats data into readable two-column format
 
-  Scenario: data has been formatted into two-column format
+  Scenario: system is formatting data into readable format
 
-  Scenario: data hasn't been formatted due to incorrect data
+  Scenario: user is notified about errors during formatting
