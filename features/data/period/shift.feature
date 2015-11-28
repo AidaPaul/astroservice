@@ -4,10 +4,6 @@ Feature: Shifting chart point by period
   based on period
   and based on expected format
 
-  Scenario: user is requesting shifting data in phase format
+  Scenario: shifting data in phase format
 
-  Scenario: user is requesting shifting data in epoch format
-
-  Scenario: user is notified about errors during shifting data into phase format
-
-  Scenario: user is notified about errors during shifting data into epoch format
+  Scenario: shifting data in epoch format
