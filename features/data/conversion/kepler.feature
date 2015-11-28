@@ -3,6 +3,6 @@ Feature: Kepler
   Convert data from kepler database
   into two columns: time and magnitudo
 
-  Scenario: converting kepler-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect kepler-style data
+  Scenario: user is notified about errors during conversion

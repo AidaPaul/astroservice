@@ -1,8 +1,6 @@
 Feature: Calculate period
   Calculates period for points
 
-  Scenario: errors occurred due to incorrect data
+  Scenario: user is requesting for calculating period
 
-  Scenario: period has been found
-
-  Scenario: calculations will take too long, aborting
+  Scenario: user is notified about errors during calculating period

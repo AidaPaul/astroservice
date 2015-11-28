@@ -3,6 +3,6 @@ Feature: Integral
   Convert data from integral database
   into two columns: time and magnitudo
 
-  Scenario: converting integral-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect integral-style data
+  Scenario: user is notified about errors during conversion

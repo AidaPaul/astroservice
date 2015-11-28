@@ -3,6 +3,6 @@ Feature: Munipack
   Convert data from munipack database
   into two columns: time and magnitudo
 
-  Scenario: converting munipack-style data
+  Scenario: user is requesting data conversion
 
-  Scenario: reporting error due to incorrect munipack-style data
+  Scenario: user is notified about errors during conversion
