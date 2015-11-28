@@ -3,10 +3,6 @@ Feature: Kepler
   Convert data from kepler database
   into two columns: time and magnitudo
 
-  Scenario: input data is correct
+  Scenario: converting kepler-style data
 
-  Scenario: input data is not correct
-
-  Scenario: output data is correct
-
-  Scenario: output data is not correct
+  Scenario: reporting error due to incorrect kepler-style data
