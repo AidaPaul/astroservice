@@ -13,27 +13,35 @@ Feature: Converting data
     And user will be asked to select a file
 
   Scenario Outline: data compatible with selected conversion
+    Given some "<sent data>"
+    And user has selected "<conversion>" method
+    Then "<sent data>" will be converted
+    And new data will be send to the user
 
     Examples: Good conversion
-      | sent data | selected conversion |
-      | asas      | asas                |
-      | kepler    | kepler              |
-      | catalina  | catalina            |
-      | chandra   | chandra             |
-      | hipparcos | hipparcos           |
-      | integral  | integral            |
-      | munipack  | munipack            |
-      | nsvs      | nsvs                |
+      | sent data | conversion |
+      | asas      | asas       |
+      | kepler    | kepler     |
+      | catalina  | catalina   |
+      | chandra   | chandra    |
+      | hipparcos | hipparcos  |
+      | integral  | integral   |
+      | munipack  | munipack   |
+      | nsvs      | nsvs       |
 
   Scenario Outline: Data incompatible with selected conversion
+    Given some "<sent data>"
+    And user has selected incompatible "<conversion>" method
+    Then "<sent data>" will be incorrectly formatted
+    And user will receive wrong data
 
     Examples: Bad conversion
-      | sent data | selected conversion |
-      | asas      | other               |
-      | kepler    | other               |
-      | catalina  | other               |
-      | chandra   | other               |
-      | hipparcos | other               |
-      | integral  | other               |
-      | munipack  | other               |
-      | nsvs      | other               |
+      | sent data | conversion |
+      | asas      | other      |
+      | kepler    | other      |
+      | catalina  | other      |
+      | chandra   | other      |
+      | hipparcos | other      |
+      | integral  | other      |
+      | munipack  | other      |
+      | nsvs      | other      |
