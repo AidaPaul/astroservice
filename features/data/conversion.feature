@@ -15,7 +15,7 @@ Feature: Converting data
   Scenario Outline: data compatible with selected conversion
     Given some "<sent data>"
     And user has selected "<conversion>" method
-    Then "<sent data>" will be converted
+    Then "<sent data>" will be converted based on selected "<conversion>"
     And converted data will be send to the user
 
     Examples: Good conversion
