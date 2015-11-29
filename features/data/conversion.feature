@@ -2,8 +2,15 @@
 Feature: Converting data
 
   Scenario: empty file provided
+    Given empty file
+    Then conversion won't be started
+    And user will be notified about empty file
 
   Scenario: no file provided
+    Given no file
+    And conversion request
+    Then conversion won't be started
+    And user will be asked to select a file
 
   Scenario Outline: data compatible with selected conversion
 
