@@ -14,17 +14,18 @@ Feature: Converting data
     Given "<input data>" provided
     And "<input data>" is compatible with selected "<conversion type>"
     Then "<input data>" will be correctly converted based on selected "<conversion type>"
+    And converted "<input data>" will be the same as "<output data>"
 
     Examples: Good conversion
-      | input data                        | conversion type |
-      | features/data/test_files/asas.txt | asas            |
-      | kepler                            | kepler          |
-      | catalina                          | catalina        |
-      | chandra                           | chandra         |
-      | hipparcos                         | hipparcos       |
-      | integral                          | integral        |
-      | munipack                          | munipack        |
-      | nsvs                              | nsvs            |
+      | input data | conversion type | output data |
+      | asas.txt   | asas            | asas.out    |
+      | kepler     | kepler          |             |
+      | catalina   | catalina        |             |
+      | chandra    | chandra         |             |
+      | hipparcos  | hipparcos       |             |
+      | integral   | integral        |             |
+      | munipack   | munipack        |             |
+      | nsvs       | nsvs            |             |
 
   Scenario Outline: Data incompatible with selected conversion
     Given "<input data>" provided
