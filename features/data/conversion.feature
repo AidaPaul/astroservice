@@ -16,7 +16,7 @@ Feature: Converting data
     Given some "<sent data>"
     And user has selected "<conversion>" method
     Then "<sent data>" will be converted
-    And new data will be send to the user
+    And converted data will be send to the user
 
     Examples: Good conversion
       | sent data | conversion |
@@ -33,7 +33,7 @@ Feature: Converting data
     Given some "<sent data>"
     And user has selected incompatible "<conversion>" method
     Then "<sent data>" will be incorrectly formatted
-    And user will receive wrong data
+    And user will receive wrong converted data
 
     Examples: Bad conversion
       | sent data | conversion |
