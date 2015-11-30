@@ -5,5 +5,5 @@ Feature: Calculates global maximum
 
   Scenario: maximum calculation
     Given set of points
-    Then maximum im points will be calculated
+    Then maximum for set of points will be calculated
     And maximum coordinates will be send to the user

@@ -7,38 +7,34 @@ Feature: Converting data
 
   Scenario: no file provided
     Given no file provided
-    And conversion request
     Then conversion won't be started
 
   Scenario Outline: data compatible with selected conversion
     Given "<input data>" provided
-    And "<input data>" is compatible with selected "<conversion type>"
-    Then "<input data>" will be correctly converted based on selected "<conversion type>"
-    And converted "<input data>" will be the same as "<output data>"
+    Then converted "<input data>" will be the same as "<correctly converted data>"
 
     Examples: Good conversion
-      | input data | conversion type | output data |
-      | asas.txt   | asas            | asas.out    |
-      | kepler     | kepler          |             |
-      | catalina   | catalina        |             |
-      | chandra    | chandra         |             |
-      | hipparcos  | hipparcos       |             |
-      | integral   | integral        |             |
-      | munipack   | munipack        |             |
-      | nsvs       | nsvs            |             |
+      | input data | correctly converted data |
+      | asas.txt   | asas.out                 |
+      | kepler     |                          |
+      | catalina   |                          |
+      | chandra    |                          |
+      | hipparcos  |                          |
+      | integral   |                          |
+      | munipack   |                          |
+      | nsvs       |                          |
 
   Scenario Outline: Data incompatible with selected conversion
     Given "<input data>" provided
-    And "<input data>" is incompatible with selected "<conversion type>"
-    Then "<input data>" will be incorrectly formatted using "<conversion type>"
+    Then converted "<input data>" won't match "<correctly converted data>"
 
     Examples: Bad conversion
-      | input data | conversion type |
-      | asas.txt   | other           |
-      | kepler     | other           |
-      | catalina   | other           |
-      | chandra    | other           |
-      | hipparcos  | other           |
-      | integral   | other           |
-      | munipack   | other           |
-      | nsvs       | other           |
+      | input data | correctly converted data |
+      | asas.txt   | asas.out                 |
+      | kepler     |                          |
+      | catalina   |                          |
+      | chandra    |                          |
+      | hipparcos  |                          |
+      | integral   |                          |
+      | munipack   |                          |
+      | nsvs       |                          |

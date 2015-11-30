@@ -13,5 +13,5 @@ Feature: Shifting chart point by period
   Scenario: shifting data in epoch format
     Given set of points
     And period
-    Then data will be shiften in epoch format
+    Then data will be shifted in epoch format
     And shifted data will be send to the user
