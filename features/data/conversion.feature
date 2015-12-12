@@ -2,31 +2,39 @@
 Feature: Converting data
 
   Scenario: empty file provided
+    Given empty file provided
+    Then conversion won't be started
 
   Scenario: no file provided
+    Given no file provided
+    Then conversion won't be started
 
   Scenario Outline: data compatible with selected conversion
+    Given "<input data>" provided
+    Then converted "<input data>" will be the same as "<correctly converted data>"
 
     Examples: Good conversion
-      | sent data | selected conversion |
-      | asas      | asas                |
-      | kepler    | kepler              |
-      | catalina  | catalina            |
-      | chandra   | chandra             |
-      | hipparcos | hipparcos           |
-      | integral  | integral            |
-      | munipack  | munipack            |
-      | nsvs      | nsvs                |
+      | input data | correctly converted data |
+      | asas.txt   | asas.out                 |
+      | kepler     |                          |
+      | catalina   |                          |
+      | chandra    |                          |
+      | hipparcos  |                          |
+      | integral   |                          |
+      | munipack   |                          |
+      | nsvs       |                          |
 
   Scenario Outline: Data incompatible with selected conversion
+    Given "<input data>" provided
+    Then converted "<input data>" won't match "<correctly converted data>"
 
     Examples: Bad conversion
-      | sent data | selected conversion |
-      | asas      | other               |
-      | kepler    | other               |
-      | catalina  | other               |
-      | chandra   | other               |
-      | hipparcos | other               |
-      | integral  | other               |
-      | munipack  | other               |
-      | nsvs      | other               |
+      | input data | correctly converted data |
+      | asas.txt   | asas.out                 |
+      | kepler     |                          |
+      | catalina   |                          |
+      | chandra    |                          |
+      | hipparcos  |                          |
+      | integral   |                          |
+      | munipack   |                          |
+      | nsvs       |                          |
