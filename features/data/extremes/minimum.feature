@@ -5,4 +5,5 @@ Feature: Calculating local minimum
 
   Scenario: minimum calculation
     Given set of points
-    Then minimum in points will be calculated
+    Then minimum im points will be calculated
+    And minimum coordinates will be send to the user
