@@ -23,7 +23,7 @@ Feature: Phase shifting
 
   Scenario: Unsuccessful phase shifting: input data contains illegal characters
     Given I have provided input data
-    And Input data contains characters other than numbers or spaces
+    And Input data contains characters other than numbers, spaces and dot (as decimal separator)
     When I request phase shifting
     Then I should be notify about data containing illegal characters
     And I should be asked to provide correct data
@@ -33,14 +33,14 @@ Feature: Phase shifting
     And I have provided <phase> greater than zero
     When I request phase shifting
     Then <input data> should be copied
-    And X values of the copied data should be increased by the value of phase
+    And X values of the copied data should be increased by the value of the phase
     And Both sets should be joined into <joined data>
     And <joined data> should be shifted by the phase
     And <shifted data> should be displayed to me
     And I should receive a link to download <shifted data>
 
     Examples:
-      | input data    | joined data | phase | shifted data |
-      | to_phase1.txt | joined1.txt | 1     | phased_1.out |
-      | to_phase2.txt | joined2.txt | 3     | phased_2.out |
-      | to phase3.txt | joined3.txt | 0.78  | phased_3.out |
+      | input data        | joined data | phase | shifted data |
+      | to_be_phased1.txt | joined1.txt | 1     | phased_1.out |
+      | to_be_phased2.txt | joined2.txt | 3     | phased_2.out |
+      | to_be_phased3.txt | joined3.txt | 0.78  | phased_3.out |
