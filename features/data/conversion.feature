@@ -5,23 +5,6 @@ Feature: Converting files from astronomical databases
   As a astronomer
   I want to convert data from various astronomical databases
 
-  Scenario Outline: Successful conversion: uploaded data match selected conversion type
-    Given I have uploaded <input data>
-    And I have selected <correct conversion type>
-    When I request conversion
-    Then <converted data> should be displayed to me
-    And I should receive a link to download <converted data>
-
-    Examples:
-      | input data    | correct conversion type | converted data |
-      | hipparcos.txt | hipparcos               | hipparcos.out  |
-      | integral.txt  | integral                | integral.out   |
-      | nsvs.txt      | nsvs                    | nsvs.out       |
-      | asas.txt      | asas                    | asas.out       |
-      | munipac.txt   | munipac                 | munipac.out    |
-      | kepler.txt    | kepler                  | kepler.out     |
-      | catalina.txt  | catalina                | catalina.out   |
-
   Scenario: Unsuccessful conversion: using empty file
     Given I have uploaded empty file
     Then I should be asked to upload non-empty file
@@ -61,3 +44,20 @@ Feature: Converting files from astronomical databases
       | munipac.txt   | munipac                 |
       | kepler.txt    | kepler                  |
       | catalina.txt  | catalina                |
+
+  Scenario Outline: Successful conversion: uploaded data match selected conversion type
+    Given I have uploaded <input data>
+    And I have selected <correct conversion type>
+    When I request conversion
+    Then <converted data> should be displayed to me
+    And I should receive a link to download <converted data>
+
+    Examples:
+      | input data    | correct conversion type | converted data |
+      | hipparcos.txt | hipparcos               | hipparcos.out  |
+      | integral.txt  | integral                | integral.out   |
+      | nsvs.txt      | nsvs                    | nsvs.out       |
+      | asas.txt      | asas                    | asas.out       |
+      | munipac.txt   | munipac                 | munipac.out    |
+      | kepler.txt    | kepler                  | kepler.out     |
+      | catalina.txt  | catalina                | catalina.out   |
